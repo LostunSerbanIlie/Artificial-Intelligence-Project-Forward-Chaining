@@ -7,11 +7,11 @@ def get_date_inegalitati():
     Returneaza un set de fapte si reguli pentru inegalitati. \n
     :return: Tuple (fapte, reguli)
     """
-    # fapte: a > b, b > c, c > d
+    # fapte: A > B, B > C, C > D
     fapte = [
-        Predicat("MaiMare", ["a", "b"]),
-        Predicat("MaiMare", ["b", "c"]),
-        Predicat("MaiMare", ["c", "d"]),
+        Predicat("MaiMare", ["A", "B"]),
+        Predicat("MaiMare", ["B", "C"]),
+        Predicat("MaiMare", ["C", "D"]),
     ]
 
     # regula: tranzitivitatea inegalitatii
@@ -22,7 +22,7 @@ def get_date_inegalitati():
         )
     ]
 
-    return fapte, reguli
+    return reguli, fapte
 
 def get_date_multimi():
     """
@@ -50,4 +50,4 @@ def get_date_multimi():
         )
     ]
 
-    return fapte, reguli
+    return reguli, fapte
