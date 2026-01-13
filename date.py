@@ -39,14 +39,14 @@ def get_date_multimi():
     # regula: daca A este subset al lui B si B este subset al lui C, atunci A este subset al lui C
     reguli = [
         Regula(
-            premise=[Predicat("Submultime", ["S1", "S2"]), Predicat("Submultime", ["S2", "S3"])],
-            concluzie=Predicat("Submultime", ["S1", "S3"])
+            premise=[Predicat("Submultime", ["s1", "s2"]), Predicat("Submultime", ["s2", "s3"])],
+            concluzie=Predicat("Submultime", ["s1", "s3"])
         ),
 
         # regula: daca x este element al lui A si A este subset al lui B, atunci x este element al lui B
         Regula(
-            premise = [Predicat("Element", ["elem", "S1"]), Predicat("Submultime", ["S1", "S2"])],
-            concluzie = Predicat("Element", ["elem", "S2"])
+            premise = [Predicat("Element", ["elem", "s1"]), Predicat("Submultime", ["s1", "s2"])],
+            concluzie = Predicat("Element", ["elem", "s2"])
         )
     ]
 

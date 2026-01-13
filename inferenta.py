@@ -9,13 +9,8 @@ def is_variable(term):
     :param term: termenul de verificat
     :return: True daca termenul este o variabila, altfel False
     """
-    accepted_values = [
-        "x", "y", "z",        # inegalitati
-        "S1", "S2", "S3",     # submultimi
-        "elem"                # elemente
-    ]
 
-    return (term in accepted_values) or (len(term) == 1 and term.islower())
+    return term.islower()
 
 def substitute(predicat, substitutes):
     """
